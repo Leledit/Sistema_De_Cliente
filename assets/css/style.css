@@ -1,0 +1,201 @@
+:root{
+  --azul: rgba(160,185,246,1);
+  --azulClaro:rgba(206,219,249,1);
+  --azulEscuro:rgba(70,126,255,1);
+  --branco:rgba(255,255,255,0.6);
+  --verde:rgba(185,255,200,1);
+  --verdeEscuro:rgba(128,255,153);
+  --cinzaEscuro:rgba(0,0,0,0.7);
+  --vermelho:rgba(252,176,176);
+  --vermelhoEscuro:rgba(255,103,103);
+
+}
+
+section{
+    width: 96%;
+    margin: 2%;
+}
+
+header ul li{
+    width: 10%;
+    text-align: center;
+    margin-right: 1%;
+    border: none;
+    border-radius:10px 10px 0px 0px;
+    background-color: var(--azul);
+    color:black;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    float: left;
+    cursor: grab;
+}
+
+header li:hover{
+    cursor: pointer;
+}
+
+.conteudo-formulario, .conteudo-listagem{
+    clear: left;
+    background-color: var(--azul);
+    border-radius: 0px 10px 10px 10px;
+    overflow: hidden;
+    border-bottom: 1px solid var(--azulEscuro);
+}
+
+.conteudo-formulario form{
+    width: 40%;
+    margin: 3% 2%;
+    background-color:var(--branco) ;
+    border-radius: 20px;
+    overflow: hidden;
+    padding-top: 2%;
+}
+
+.conteudo-formulario label{
+    display: block;
+    font-size: 20px;
+    margin-left: 5%;
+}
+
+.conteudo-formulario input ,.conteudo-formulario select{
+    width: 90%;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    margin: 3% 5%;
+}
+
+.conteudo-formulario button{
+    width: 150px;
+    height: 32px;
+    text-align: center;
+    line-height: 30px;
+    display: block;
+    margin-top: 2%;
+    border: none;
+    border-radius: 10px;
+    background-color:var(--azulEscuro);
+    margin-bottom:30px;
+    float: right;
+    margin-right: 5%;
+}
+
+.conteudo-formulario button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.conteudo-listagem{
+    display: none;
+}
+
+.conteudo-listagem table{
+    width: 96%;
+    margin: 2%;
+    border-bottom: 1px solid var(--azulEscuro);
+}
+
+.conteudo-listagem th{
+    border-right: 1px solid var(--azulEscuro);
+    line-height: 20px;
+    background-color: var(--azulClaro);
+    padding: 1%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--azulEscuro);
+}
+
+.conteudo-listagem th:first-child{
+    width: 36%;
+}
+
+.conteudo-listagem th:last-child{
+    border-right: none;
+}
+
+.conteudo-listagem td{
+    border: 1px solid var(--azulEscuro);
+    padding-left: 1%;
+}
+
+.conteudo-listagem tr{
+    height: 30px;
+    line-height: 30px;
+
+
+}
+
+.conteudo-listagem img{
+    width: 15%;
+    margin-right: 10%;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.btnDesativo{
+    background-color: var(--azulClaro);
+    opacity: 0.6;
+}
+
+.janelaModal{
+    width: 30%;
+    min-height: 100px;
+    overflow: hidden;
+    background-color: var(--azulClaro);
+    border-radius: 20px;
+    margin: 0% 35%;
+    border: 1px solid var(--azulEscuro);
+    position: absolute;
+    top: 40%;
+    display: none;
+}
+
+.janelaModal section:first-child{
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 2%;
+    margin-bottom: 5%;
+    color:var(--cinzaEscuro) ;
+}
+
+.janelaModal button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+    float: right;
+    margin-right: 5%;
+    margin-top: 2%;
+    background-color: var(--azulEscuro);
+
+}
+
+.janelaModal button:hover{
+    cursor: pointer;
+}
+
+.sectionPrincipal{
+    opacity: 0.5;
+    
+}
+
+.janelaModalSucess{
+    background-color: var(--verde);
+    border-color: var(--verdeEscuro);
+    display: block;
+}
+
+.janelaModalSucess button{
+    background-color: var(--verdeEscuro);
+}
+
+.janelaModalFall{
+    background-color: var(--vermelho);
+    border-color: var(--vermelhoEscuro);
+    display: block;
+}
+
+.janelaModalFall button{
+background-color: var(--vermelhoEscuro);
+}

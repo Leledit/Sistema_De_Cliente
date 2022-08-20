@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/reset.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <title>Sistema de Clientes</title>
+</head>
+<body>
+    <section>
+        <header>
+            <ul>
+                <li id="header-formulario">Cadastro</li>
+                <li id="header-listagem" class="btnDesativo">Listagem</li>
+            </ul>
+        </header>
+        <div class="conteudo-formulario">
+            <form method="post">
+                <label>Nome:</label>
+                <input type="text" placeholder="Digite o seu nome" id="campNome">
+                <label>Cidade:</label>
+                <input type="text" placeholder="Digite a sua cidade" id="campCidade">
+                <label>Sexo:</label>
+                <select id="campSexo">
+                    <option>Masculino</option>
+                    <option>Ferminio</option>
+                </select>
+                <button id="btnSalvar">Cadastro</button>
+            </form>
+        </div>
+        <div class="conteudo-listagem">
+            <table>
+                <thead>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Cidade</th>
+                    <th>Sexo</th>
+                    <th>Açoes</th>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <div class="janelaModal">
+        <section>
+        </section>
+        <section>
+            <button id="btnFecharPopUp">Fechar</button>
+        </section>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="assets/js/main.js"></script>
+</html>
